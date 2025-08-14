@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # --- Получаем API-ключ из переменных окружения для безопасности ---
 # Мы не будем хранить ключ прямо в коде. Мы настроим его на хостинге.
-GEMINI_API_KEY = os.environ.get("AIzaSyA4JphmE3gGY2EeHeocFc4PQNEmmUPpsWA")
+GEMINI_API_KEY = "GEMINI_API_KEY"
 
 # --- Главный и единственный маршрут нашего API ---
 @app.route('/generate', methods=['POST'])
